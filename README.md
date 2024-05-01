@@ -1,28 +1,46 @@
 # OOAD-Semester-Project
 
-#### Title: Mountain Hike Planner
+## Mountain Hike Planner
 
-#### Team Members:
+## Team Members
 - Roman Di Domizio
 - Aaron Asibbey
 
-#### Description:
-The Mountain Hike Planner is a straightforward Java application aimed at helping hikers quickly select a trail and prepare a gear checklist. Focused on simplicity and ease of use, this desktop application allows users to browse a curated list of trails, view essential trail details, and generate a gear checklist customized to the selected trail’s requirements. This tool is designed for novice hikers or those seeking a quick way to plan day hikes without the need for extensive research or preparation.
+## Project Description
+The Mountain Hike Planner is a Java desktop application designed to assist hikers in selecting trails and preparing gear checklists. This tool targets novice hikers and those looking for a quick, easy way to plan day hikes. Users can browse trails, view essential details such as distance and elevation, and generate a customized gear checklist tailored to the selected trail.
 
-#### Language Choice: Java
+## Language and Tools
+- **Programming Language**: Java
+- **UI Framework**: JavaFX - for creating the graphical user interface.
+- **Data Management**: Jackson - for JSON processing to handle trail and checklist data.
 
-#### Known Libraries/Frameworks:
-- **JavaFX**: For creating the graphical user interface (GUI).
-- **Jackson**: For simple JSON processing to manage trail data and user-generated checklists.
+## Functional Elements
+- **Trail Selection Interface**: Users can view and select from a list of trails, with details like distance, elevation gain, and estimated completion time.
+- **Gear Checklist Generator**: Automatically generates a gear checklist based on the trail selected, which users can customize.
+- **Trail Data Management**: Allows adding, removing, and updating trail information using a JSON-based storage system.
+- **User Interface for Checklist Customization**: Users can modify the checklist by adding personal items and save their configurations for later use.
 
-#### Functional Elements:
-1. **Trail Selection Interface**: A minimalistic interface allowing users to browse and select a trail, showcasing basic details like distance, elevation gain, and estimated completion time.
-2. **Gear Checklist Generator**: Based on the selected trail, automatically generate a basic checklist of recommended gear items.
-3. **Trail Data Management**: Manage the underlying JSON-based storage of trail data, allowing for the addition, removal, and updating of trail information.
-4. **User Interface for Checklist Customization**: Enable users to add personal items to the automatically generated gear checklist and save their customized lists for future reference.
+## Design Patterns
+- **Singleton Pattern**: Ensures a single instance of the application's main window and data source throughout the application's lifecycle.
+- **Factory Pattern**: Utilized for creating different types of checklist items, ensuring consistency in item creation.
+- **Observer Pattern**: Updates the UI in real-time as users add or remove items from their checklist.
+- **Strategy Pattern**: Allows the selection logic of gear items to vary based on the difficulty and length of the trail.
 
-#### Design Patterns to Implement:
-1. **Singleton Pattern**: To manage a single instance of the application's main window and trail data source.
-2. **Factory Pattern**: For creating instances of different types of checklist items, standardizing the way items are added to the checklist.
-3. **Observer Pattern**: To update the checklist display in real-time as users customize their list.
-4. **Strategy Pattern**: Implemented in the selection of gear items, allowing for different strategies based on trail difficulty and length.
+## Development Setup
+1. **Clone the Repository**: Start by cloning the repo to your local machine.
+2. **Install JavaFX**: Ensure JavaFX is installed and properly configured in your development environment.
+3. **Set Up Jackson**: Include the Jackson libraries for managing JSON data.
+4. **Compile and Run**: Use your IDE (IntelliJ IDEA) to compile the project and run the main application.
+
+## Contribution Guidelines
+To contribute to the Mountain Hike Planner, please follow these guidelines:
+1. **Fork the Repository**: Make a fork of the project.
+2. **Feature Branch**: Create a branch for each new feature or improvement.
+3. **Pull Requests**: Submit a pull request from your feature branch to the main project for review.
+4. **Code Reviews**: Participate in code reviews to maintain code quality and consistency.
+
+## Project Timeline
+- **Phase 1**: Setup and initial implementation (UI setup, basic data handling).
+- **Phase 2**: Implementation of core functionalities (trail selection, checklist generation).
+- **Phase 3**: Testing and final adjustments.
+- **Demo Day**: Prepare for final demo and grading interview.
