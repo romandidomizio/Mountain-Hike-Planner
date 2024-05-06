@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Trail Ridge Road",
+    "distance": 12.0,
+    "elevationGain": 1000,
+    "estimatedTime": 4.5
+  },
+  {
+    "name": "Emerald Lake Trail",
+    "distance": 3.5,
+    "elevationGain": 650,
+    "estimatedTime": 2.0
+  }
+]

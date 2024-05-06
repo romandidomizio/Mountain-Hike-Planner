@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>csci.ooad</groupId>
+    <groupId>ooad</groupId>
     <artifactId>OOAD-Semester-Project</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -14,7 +14,7 @@
     </properties>
 
     <dependencies>
-        <!-- JavaFX's dependencies, version updated to match your setup -->
+        <!-- JavaFX's dependencies -->
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
@@ -68,7 +68,13 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
-                    <mainClass>csci.ooad.Main</mainClass>
+                    <mainClass>ooad.Main</mainClass>
+                    <launcher>launcher</launcher>
+                    <options>
+                        <option>--module-path</option>
+                        <option>${/Users/romandidomizio/Downloads/javafx-sdk-17.0.11/lib}</option>
+                        <option>--add-modules=javafx.controls,javafx.fxml</option>
+                    </options>
                 </configuration>
             </plugin>
             <plugin>
