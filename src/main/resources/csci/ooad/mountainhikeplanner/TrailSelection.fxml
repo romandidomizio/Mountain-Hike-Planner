@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="csci.ooad.mountainhikeplanner.TrailSelectionController" spacing="15" style="-fx-background-color: #324851; -fx-padding: 20;">
+    <ListView fx:id="listViewTrails" prefHeight="300.0" prefWidth="400" style="-fx-border-color: #596869; -fx-border-radius: 5; -fx-background-radius: 5; -fx-background-color: #2f4f4f;">
+    </ListView>
+    <TextArea fx:id="textAreaDetail" prefHeight="240.0" prefWidth="400" editable="false" wrapText="true" style="-fx-control-inner-background: #3e606f; -fx-font-family: 'Arial'; -fx-font-size: 14pt; -fx-text-fill: #d9d9d9;">
+    </TextArea>
+    <ListView fx:id="listViewGearChecklist" prefHeight="220.0" prefWidth="400" style="-fx-border-color: #596869; -fx-border-radius: 5; -fx-background-radius: 5; -fx-background-color: #2f4f4f;">
+    </ListView>
+    <ComboBox fx:id="gearTypeComboBox" prefWidth="200" style="-fx-font-family: 'Arial'; -fx-font-size: 12pt; -fx-background-color: #eceff1;" promptText="Add Gear">
+    </ComboBox>
+    <Button text="Add Selected Item" onAction="#handleAddItem" style="-fx-background-color: #467f71; -fx-text-fill: #ffffff; -fx-border-radius: 5; -fx-background-radius: 5;">
+    </Button>
+    <Button text="Remove Selected Item" onAction="#handleRemoveItem" style="-fx-background-color: #8a9a5b; -fx-text-fill: #ffffff; -fx-border-radius: 5; -fx-background-radius: 5;">
+    </Button>
+</VBox>
+
