@@ -4,12 +4,19 @@
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
 
-<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="csci.ooad.mountainhikeplanner.TrailSelectionController">
-    <ListView fx:id="listViewTrails" prefHeight="200.0" />
-    <TextArea fx:id="textAreaDetail" prefHeight="160.0" editable="false" wrapText="true" />
-    <ListView fx:id="listViewGearChecklist" prefHeight="140.0" />
-    <ComboBox fx:id="gearTypeComboBox" prefWidth="150" />
-    <Button text="Add Selected Item" onAction="#handleAddItem" />
-    <Button text="Remove Selected Item" onAction="#handleRemoveItem" />
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="csci.ooad.mountainhikeplanner.TrailSelectionController" spacing="10" style="-fx-background-color: #324851; -fx-padding: 10;">
+    <ListView fx:id="listViewTrails" prefHeight="200.0" style="-fx-border-color: #596869; -fx-border-radius: 5; -fx-background-radius: 5; -fx-background-color: #2f4f4f;">
+    </ListView>
+    <TextArea fx:id="textAreaDetail" prefHeight="160.0" editable="false" wrapText="true" style="-fx-control-inner-background: #3e606f; -fx-font-family: 'Arial'; -fx-font-size: 10pt; -fx-text-fill: #d9d9d9;">
+    </TextArea>
+    <ListView fx:id="listViewGearChecklist" prefHeight="140.0" style="-fx-border-color: #596869; -fx-border-radius: 5; -fx-background-radius: 5; -fx-background-color: #2f4f4f;">
+    </ListView>
+    <ComboBox fx:id="gearTypeComboBox" prefWidth="150" style="-fx-font-family: 'Arial'; -fx-font-size: 10pt; -fx-background-color: #eceff1;" promptText="Add Gear">
+    </ComboBox>
+    <Button text="Add Selected Item" onAction="#handleAddItem" style="-fx-background-color: #467f71; -fx-text-fill: #ffffff; -fx-border-radius: 5; -fx-background-radius: 5;">
+    </Button>
+    <Button text="Remove Selected Item" onAction="#handleRemoveItem" style="-fx-background-color: #8a9a5b; -fx-text-fill: #ffffff; -fx-border-radius: 5; -fx-background-radius: 5;">
+    </Button>
 </VBox>
