@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="csci.ooad.mountainhikeplanner.TrailSelectionController">
+    <ListView fx:id="listViewTrails" prefHeight="200.0" />
+    <TextArea fx:id="textAreaDetail" prefHeight="160.0" editable="false" wrapText="true" />
+    <ListView fx:id="listViewGearChecklist" prefHeight="140.0" />
+    <ComboBox fx:id="gearTypeComboBox" prefWidth="150" />
+    <Button text="Add Selected Item" onAction="#handleAddItem" />
+    <Button text="Remove Selected Item" onAction="#handleRemoveItem" />
+</VBox>
