@@ -1,4 +1,4 @@
-# OOAD-Semester-Project
+# Object Oriented Analysis & Design: Semester Project
 
 ## Mountain Hike Planner
 
